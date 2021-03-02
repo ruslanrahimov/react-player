@@ -1,0 +1,28 @@
+.song-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .song__cover {
+    width: 20%;
+    border-radius: 50%;
+    margin-top: 1rem;
+  }
+  .song__name {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+  .song__artist-name {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-container {
+    padding-top: 1rem;
+    .song__cover {
+      width: 60%;
+    }
+  }
+}

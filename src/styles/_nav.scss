@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  &__logo {
+  }
+  &__btn {
+    background: transparent;
+    padding: 0.5rem;
+    border: 2px solid rgb(65, 65, 65);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding-top: 2.04rem;
+    &__btn {
+      z-index: 10;
+    }
+  }
+}
